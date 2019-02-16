@@ -1,0 +1,52 @@
+section.about
+  background: #E0EBE8
+
+  .section-1
+    height: 500px
+
+    .vector
+      position: center
+      height: 100%
+      background:
+        image: url("/assets/img/vector.png")
+        repeat: no-repeat
+        size: contain
+        position: center
+
+
+  .section-2
+    height: 405px
+
+    .index
+      height: 100%
+      margin-left: 30px
+      background:
+        image: url("/assets/img/about.svg")
+        repeat: no-repeat
+        size: 70%
+        position: center
+
+
+
+    .col-50
+      height: 100%
+      margin-right: 50px
+
+      p
+        height: 35%
+        font-size: 20px
+        padding-top: 50px
+        text-align: justify
+        line-height: 1.8
+
+        @media (max-width: 1400px)
+          font-size: 18px
+          margin-left: 30px
+          line-height: 1.5
+
+        @media (max-width: 1200px)
+          font-size: 15px
+          margin-left: 30px
+
+    @media (max-width: 690px)
+      display: none

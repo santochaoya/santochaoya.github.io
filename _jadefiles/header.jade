@@ -1,0 +1,21 @@
+mixin nav-content()
+  ul
+    li: a(href = "#home") Home
+    li: a(href = "#about") About
+    li: a(href = "#projects") Projects
+    li: a(href = "#gallery") Gallery
+    li: a(href = "#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo Shaun Meng
+
+    nav.site-nav
+      +nav-content()
+
+    .profile
+
+    .mobile-nav-toggle: span

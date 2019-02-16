@@ -1,0 +1,66 @@
+#Project Wish List:
+
+	1.jekyll
+	2.jade
+	3.SASS
+	4.Autoprefixer
+	5.Brower Sync
+
+
+#Photoshop
+
+
+# self-introduction of AR summer school:
+
+    When I enroled the lecture of Computer Graphic, I found I was so interested in Computer Graphic and Design.
+    Fortunate with my interesting, I got an A+ in that lecture.
+    I would like to find a job in the area which involved in Computer Graphic and Design.
+
+
+# city silhouette:tower i have ever visited:
+
+	1. Sky Point (2016 230m)
+	2. N Seoul Tower (2016 236m)
+	3. Sky Tower (2019 328m)
+	4. Macau Tower (2013 338m)
+	5. West Pearl Tower (2017 339m)	
+	6. Bank of China Tower HK (2015 367m)
+	7. Petronas Tower (2013 451m)
+	8. Oriental Pearl Tower (2014 467m)
+	9. Taipei 101 (2013 508m)
+	10. Tokyo Skytree (2014 634m)
+
+
+# create a section:
+
+    1. create a file - section.jade in _jadefiles
+    2. include the jade file into index.html(import jade file)
+    3. create a sass - section.sass in 3-sections
+    4. include the sass file into the main.scss(import sass file)
+
+
+# problems:
+
+    1.differences between position: relative and absolute:
+    2.&:after / hover
+    3.opacity
+    4.how to change scroll to type the page
+    5.header.sass @media(max-width: 775px):
+        the max width needs to be fixed
+
+
+# posts loop:
+
+    1. add a pipe | before '{% for ... %}' when using a pug rather than jade
+
+
+# animates of posts:
+    1. download from animates.css - view on github
+    2. source/attention_seekers/tada.css copy and paste to articles.sass
+    3. source/_base.css copy and paste animation-duration and animation-fill-mode
+
+    is-emph = is-emphasis
+
+
+# environment values probles:
+set node.js in PATH: SET PATH=C:\Program Files\Nodejs;%PATH%

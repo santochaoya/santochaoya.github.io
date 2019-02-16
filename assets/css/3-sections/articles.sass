@@ -1,0 +1,69 @@
+section.articles
+  .col-1
+    display: flex
+    align-items: center
+
+
+  .article-wrap
+    margin: -30px 0
+
+
+  .article-thumb
+    display: block
+    background:
+      size: cover
+      position: center
+    width: 50%
+    float: left
+    position: relative
+    overflow: hidden
+    opacity: 0
+    transition: all 300ms ease-in-out
+
+    &.is-visible
+      opacity: 1
+
+
+    &.is-emph
+      animation-name: tada
+      animation-duration: 1s
+      animation-fill-mode: both
+
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 50%
+
+
+  @media (max-width: 640px)
+    .article-thumb
+      position: center
+
+    .desc-wrap
+      margin-top: 100px
+
+
+  @media (max-width: 999px)
+    .article-thumb
+      height: 50%
+
+
+@keyframes tada 
+  0%
+    transform: scale3d(1, 1, 1)
+
+
+  10%, 20%
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+
+
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+  100%
+    transform: scale3d(1, 1, 1)
+

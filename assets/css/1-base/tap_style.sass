@@ -1,0 +1,25 @@
+.article-meta
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: fade-out(#E0EBE8, 0.3)
+  padding: 10px
+  transform: translate(0%, 100%)
+  transition: all 200ms ease-in-out
+  opacity: 0
+  text-align: center
+
+  .name
+    color: black
+    font-size: 18px
+    line-height: 1.2
+
+  .date
+    font-style: italic
+
+
+.article-thumb:hover .article-meta
+  opacity: 1
+  transform: translate(0%, 0%) scale(1)

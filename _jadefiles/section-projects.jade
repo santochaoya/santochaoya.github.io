@@ -1,0 +1,180 @@
+section.projects#projects
+  .flex-col.flex--space-around
+    .starter
+      .flex-row.flex--center
+        .col-2
+          h1 What I can do
+          p These are some sections I’ve done. For more detail works you can visit me on github.
+
+
+
+    .project-1
+      .flex-row.flex--center
+        .col-50
+          .articles
+            | {% for project in site.categories.p1 reversed limit : 6 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p1/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+
+        .col-50.order-first
+          .articles
+            h2 AI & Algorithms
+            p Solving problems by transforming into graphic with search techniques and algorithms, compute and implement logical inference with relative algorithms. Applying machine learning algorithms to real database and build predictive models for tasks. etc.
+            P Tools: Python, Prolog
+            .tools.flex-row
+              img.image(src="/assets/img/icon/python.svg")
+              img.image(src="/assets/img/icon/prolog.svg")
+            .col-1
+              a(href="https://github.com/santochaoya/COSC367-Artificial_Intelligence").home-cta View on Github
+
+
+
+
+
+    .project-2
+      .flex-row.flex--center
+        .col-50
+          .articles
+            | {% for project in site.categories.p2 reversed limit : 4 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p2/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+        .col-50.order-first
+          .articles
+            h2.home-lead Data Mining
+            p Analysis data with conducting appropriate statistical modeling techniques: regression, classification, clustering and so on, and interpret to a non-user of statistics can be understand. Use R completely and write a scientific and technical report.
+            P Tools: R, MD
+            .tools.flex-row
+              img.image(src="/assets/img/icon/R1.svg")
+              img.image(src="/assets/img/icon/R2.png")
+            .col-1
+              a(href="https://github.com/santochaoya/STAT318-data-mining  ").home-cta View on Github
+
+
+
+
+    .project-3
+      .flex-row.flex--center
+        .left.flex-row.flex--center
+          .col-50
+            .video-strip
+            .flex-video <iframe width="1101" height="826" src="https://www.youtube.com/embed/Eak5vtYFzKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          .col-50.order-first
+            .articles
+              h2.home-lead Computer Graphics
+              P Develop programs using OpenGL to model and render three dimensional scenes, Design and implement three-dimensional transformations and lighting models e.g. Ray Tracing, shader based methods for programming the graphics hardware.
+              P Tools: OpenGL, C++, PS
+              .tools.flex-row
+                img.image(src="/assets/img/icon/opengl.png")
+                img.image(src="/assets/img/icon/c++.png")
+                img.image(src="/assets/img/icon/ps.svg")
+              .col-1
+                a(href="https://github.com/santochaoya/COSC363-Computer_Graphics_OpenGL").home-cta View on Github
+
+        .right
+          .articles
+            | {% for project in site.categories.p3 reversed limit : 4 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p3/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+
+    .project-4
+      .flex-row.flex--center
+        .col-50
+          .articles
+            | {% for project in site.categories.p4 reversed limit : 4 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p4/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+        .col-50.order-first
+          .articles
+            h2.home-lead Internet Technology and Engineering
+            p Analyze a network topology, set up and configure OSPF routing for the given topology. Design and implement Routers with OSPF, RIP, BGP protocols. Design algorithms for traffic engineering and network flow problems as optimization problems
+            p Cplex, Python
+            .tools.flex-row
+              img.image(src="/assets/img/icon/cplex.png")
+              img.image(src="/assets/img/icon/python.svg")
+            .col-1
+              a(href="https://github.com/santochaoya/COSC364-RIP_Routing").home-cta View on Github
+
+
+
+
+    .project-5
+      .flex-row.flex--center
+        .col-50
+          .articles
+            | {% for project in site.categories.p5 reversed limit : 3 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p5/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+
+        .col-50.order-first
+          .articles
+            h2.home-lead Web Computing Architectures
+            p write web application in PHP, JavaScript, Node.js, using MySQL or MongoDB for persistent storage, with data queries and updates. Understand the principles behind AJAX. Using MCV, Vue.js, HTML5 to design and implement a web service with AJAX, SOAP-based and RESTful.
+            P Tools: Mysql, Express6.0, JavaScript, HTML5, CSS, Vue.js
+            .tools.flex-row
+              img.image(src="/assets/img/icon/mysql.svg")
+              img.image(src="/assets/img/icon/expressjs.svg")
+              img.image(src="/assets/img/icon/js.png")
+              img.image(src="/assets/img/icon/html.png")
+              img.image(src="/assets/img/icon/css.png")
+              img.image(src="/assets/img/icon/vue.svg")
+            .col-1
+              a(href="https://github.com/santochaoya/COSC363-Computer_Graphics_OpenGL").home-cta View on Github
+
+
+
+    .project-6
+      .flex-row.flex--center
+        .col-50
+          .articles
+            | {% for project in site.categories.p6 reversed limit : 6 %}
+            a(href="{% if project.link %} {{project.link}} {% else %} {{ project.url }} {% endif %}" style="background-image: url(assets/img/projects/p6/{{project.thumbnail}})").project-thumb
+              .article-meta
+                .name {{project.title}}
+                .date {{project.date | date: "%b %d, %Y"}}
+            | {% endfor %}
+
+
+        .col-50.order-first
+          .articles
+            h2.home-lead Slide Animation
+            p As amateur, I tried to make slides animation different each time. Here are some works.
+            p Tools: PowerPoint, Adobe Illustrator, PhotoShop CS5
+            .tools.flex-row
+              img.image(src="/assets/img/icon/ppt.png")
+              img.image(src="/assets/img/icon/ai.png")
+              img.image(src="/assets/img/icon/ps.svg")
+
+
+
+
+
+
+
+
+
+
+
+
+
+

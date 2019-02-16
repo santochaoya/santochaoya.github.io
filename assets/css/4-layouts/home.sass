@@ -1,0 +1,85 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  @media (max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+  // Flex Classes
+  .flex-row
+    display: flex
+    flex-direction: row
+    height: 100%
+
+  .flex-col
+    display: flex
+    flex-direction: column
+    height: 100%
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+
+//columns
+.col-1
+  width: 320px
+  margin: 0 10px
+  box-sizing: border-box
+
+.col-2
+  max-width: 640px
+  margin: 0 10px
+  box-sizing: border-box
+  width: 100%
+
+
+.col-50
+  width: 50%
+
+.push-left
+  margin-right: 330px
+
+.push-right
+  margin-left: 330px
+
+.push-up
+  margin-bottom: 100px
+
+.push-down
+  margin-top: 150px
+
+@media (max-width: 640px)
+  .home-sections .flex-row
+    display: block
+
+  .col-1
+    max-width: 100%
+
+  .col-50
+    width: auto
+
+  .push-right
+    margin-left: 0
+
+
+
+
+// Typography
+
+.home-lead
+  line-height: 1.5
+
+
+@media (max-width: 640px)
+  .home-lead
+    text-align: center
